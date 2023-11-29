@@ -1,0 +1,35 @@
+@import "../StyleVariables/mainVariables.scss";
+
+.Footer {
+  bottom: 0;
+  height: 10rem;
+  background-color: #262626;
+  text-align: center;
+
+  .FooterGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 7rem;
+
+    a {
+      display: block;
+      text-decoration: none;
+      list-style-type: none;
+      color: white;
+      padding: 0 0.5rem;
+      line-height: 7rem;
+      font: 600 1rem "Helvetica Neue", Helvetica, "Roboto", Arial;
+    }
+  }
+
+  span {
+    display: block;
+    color: white;
+    font: 500 1rem "Helvetica Neue", Helvetica, "Roboto", Arial;
+    margin-top: 1rem;
+  }
+}

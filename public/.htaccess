@@ -1,0 +1,9 @@
+# Active la réécriture d'URL
+RewriteEngine On
+
+# Si l'URL correspond à un fichier ou un répertoire existant, ne pas appliquer la réécriture d'URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Réécrire l'URL vers la page d'index
+RewriteRule ^ index.html [L]

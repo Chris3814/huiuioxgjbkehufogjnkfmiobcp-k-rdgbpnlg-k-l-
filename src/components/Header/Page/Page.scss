@@ -1,0 +1,71 @@
+@import "../../StyleVariables/mainVariables.scss";
+
+.Content {
+  margin-top: 10rem;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  display: block;
+  font-family: $text-style;
+  text-align: center;
+
+  .CenteredImg {
+    max-width: 60%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 1.25rem;
+  }
+
+  .Summary {
+    color: darkblue;
+    list-style-type: disc;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .GridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2rem;
+    place-items: center;
+  }
+
+  .ArticleList {
+    font-size: 1.25rem;
+    list-style-type: none;
+    text-align: justify;
+    li {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .Content {
+    text-align: left;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    .CenteredImg {
+      max-width: 25rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .Content {
+    .GridContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
