@@ -1,14 +1,19 @@
+// Importation de la bibliothèque react
 import React from "react";
+
+// Importation de la feuille de style
 import "./Footer.scss";
 
+// Création d'une fonction nommée 'Footer' qui contiendra le footer
 function Footer() {
+  // Contiendra ce que va retourner la fonction 'Footer'
   return (
     <div className="Footer">
       <ul className="FooterGroup">
         <a href="/#">
           <li className="FooterItem">Accueil</li>
         </a>
-        <a href="/#a-propos">
+        <a href="./A-propos.js">
           <li className="FooterItem">A Propos</li>
         </a>
         <a href="/mentions-legales-cgu">

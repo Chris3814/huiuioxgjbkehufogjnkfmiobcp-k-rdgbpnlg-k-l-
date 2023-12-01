@@ -1,9 +1,17 @@
+// Importation da la bibliothèque react et du hook permettant de gérer l'état locale des composants
 import React, { useState } from "react";
-import "./Page.scss";
+
+// Importation de la page 'Articles'
 import Promo from "./Promo";
 
+// Importation de la feuille de style
+import "./Page.scss";
+
+// Création d'une fonction nommée 'APropos' qui contiendra la page à propos du projet de CyberSafe
 function APropos() {
   const [choixPromoValue, setChoixPromoValue] = useState();
+
+  // Contiendra ce que va retourner la fonction 'Main'
   return (
     <div className="Content">
       <h2 id="a-propos">📌 À propos du projet</h2>
