@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Header.scss";
-import HeaderLogo from "../../assets/logo_title-nobg.webp";
+import HeaderLogo from "../../assets/logo_no_bg.png";
 import "../MenuBurger/MenuBurger.scss";
 
 function Header() {

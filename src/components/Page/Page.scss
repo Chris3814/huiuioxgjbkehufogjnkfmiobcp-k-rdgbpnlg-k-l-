@@ -5,7 +5,7 @@
 }
 
 .Content {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-left: 8vw;
   margin-right: 8vw;
   display: block;
@@ -22,14 +22,9 @@
   }
 
   .Banner {
-    max-width: 95%;
-  }
-
-  .CenteredImg {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 95%;
+    width: 100%;
+    height: auto;
   }
 
   .ArticleImg {
@@ -47,6 +42,8 @@
     grid-auto-rows: minmax(300px, auto);
     padding-top: 3.5rem;
     padding-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 
     .Art {
       background-position: center;
@@ -61,28 +58,50 @@
 
     .Art1 {
       background-image: url(../../assets/Articles/bg-Art1.jpg);
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
     }
 
     .Art2 {
       background-image: url(../../assets/Articles/bg-Art2.jpg);
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
     }
     .Art3 {
       background-image: url(../../assets/Articles/bg-Art3.jpg);
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
     }
     .Art4 {
       background-image: url(../../assets/Articles/bg-Art4.jpg);
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
     }
     .Art5 {
       background-image: url(../../assets/Articles/bg-Art5.jpg);
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
     }
     .Art6 {
       background-image: url(../../assets/Articles/bg-Art6.jpg);
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
     }
     .Art7 {
       background-image: url(../../assets/Articles/bg-Art7.jpg);
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
     }
+
     .ArtPresentation {
-      background-image: url(../../assets/Articles/bg-ArtPresentation.webp);
+      background-image: url(../../assets/accueil-img/accueil-banner-1.webp);
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+    .ArtQuiz {
+      background-image: url(../../assets/accueil-img/accueil-banner-1.webp);
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
     }
 
     a {
@@ -351,8 +370,8 @@
 @media (min-width: 900px) {
   .Content {
     text-align: left;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
 
     .ContentImg {
       max-width: 50rem;
@@ -380,19 +399,19 @@
 @media (min-width: 1500px) {
   .Content {
     .ArticlesWrapper {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: minmax(300px, auto);
 
       .Art1 {
         grid-row: 1 / 3;
       }
 
-      .Art4 {
-        grid-column: 2 / 4;
+      .ArtPresentation {
+        grid-column: 1 / 3;
       }
 
-      .ArtPresentation {
-        grid-column: 1 / 4;
+      .ArtQuiz {
+        grid-column: 3 / 5;
       }
     }
 

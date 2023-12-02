@@ -21,7 +21,7 @@ function Main() {
       <ScrollToTopButton />
 
       <img
-        className="CenteredImg Banner"
+        className="Banner"
         src={require("../../assets/accueil-img/accueil-banner-1.webp")}
       ></img>
       <br />

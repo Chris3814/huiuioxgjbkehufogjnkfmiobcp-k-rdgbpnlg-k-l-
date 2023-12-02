@@ -61,6 +61,13 @@ function Articles() {
           <p>Retour sur notre intervention</p>
         </div>
       </div>
+      <div className="Art ArtQuiz">
+        <a href="/articles/presentation"></a>
+        <div className="ArtContent">
+          <h2>Quiz</h2>
+          <p>Se tester via un quiz</p>
+        </div>
+      </div>
     </div>
   );
 }
