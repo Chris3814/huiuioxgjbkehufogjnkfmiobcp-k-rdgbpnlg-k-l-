@@ -15,7 +15,7 @@ function Main() {
   
   // Contiendra ce que va retourner la fonction 'Main'
   return (
-    <div className="Content">
+    <div className="Content MainContent">
 
       {/* Ajout du composant ScrollToTopButton */}
       <ScrollToTopButton />

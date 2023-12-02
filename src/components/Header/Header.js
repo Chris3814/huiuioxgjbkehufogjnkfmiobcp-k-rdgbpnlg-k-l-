@@ -70,7 +70,7 @@ function Header() {
           </li>
           <li>
             <Link
-              to="/A-propos.js"
+              to="/A-propos"
               className="underline"
               onClick={handleClickMenu}
             >

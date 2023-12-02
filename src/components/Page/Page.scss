@@ -5,14 +5,25 @@
 }
 
 .Content {
-  margin-top: 5rem;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  margin-top: 10rem;
+  margin-left: 15vw;
+  margin-right: 15vw;
   display: block;
   font-family: $text-style;
   text-align: center;
   padding-bottom: 2.5rem;
   min-height: 90vh;
+
+  &.MainContent {
+    margin-top: 5rem;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    font-family: $text-style;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    min-height: 90vh;
+  }
 
   .ContentImg {
     display: block;
@@ -54,6 +65,11 @@
       background-size: cover;
       overflow: hidden;
       background-color: #f2f3f5;
+      &.etendu {
+        .ArtContent {
+          transform: scale(1.1); // Vous pouvez ajuster la valeur pour l'effet d'agrandissement
+        }
+      }
     }
 
     .Art1 {
@@ -370,8 +386,14 @@
 @media (min-width: 900px) {
   .Content {
     text-align: left;
-    margin-left: 0vw;
-    margin-right: 0vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+
+    &.MainContent {
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
+    }
 
     .ContentImg {
       max-width: 50rem;
