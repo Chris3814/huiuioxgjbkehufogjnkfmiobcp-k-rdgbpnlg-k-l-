@@ -65,12 +65,25 @@
       background-size: cover;
       overflow: hidden;
       background-color: #f2f3f5;
-      &.etendu {
-        .ArtContent {
-          transform: scale(1.1); // Vous pouvez ajuster la valeur pour l'effet d'agrandissement
-        }
-      }
     }
+    
+    .Art:hover .ArtContent {
+      transform: translateY(0);
+    }
+
+    .ArtContent {
+      transform: translateY(100%);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .Art:hover .hidden {
+      display: block;
+    }
+
 
     .Art1 {
       background-image: url(../../assets/Articles/bg-Art1.jpg);
