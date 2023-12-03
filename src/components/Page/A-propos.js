@@ -52,6 +52,7 @@ function APropos() {
             value={choixPromoValue}
             onChange={(e) => setChoixPromoValue(e.target.value)}
           >
+            <option value="3">2023-2024</option>
             <option value="2">2022-2023</option>
             <option value="1">2021-2022</option>
           </select>
