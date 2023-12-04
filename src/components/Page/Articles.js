@@ -59,7 +59,7 @@ function Articles() {
         </div>
       </div>
       <div className="Art ArtQuiz">
-        <a href="/articles/presentation"></a>
+        <a href="/Quiz"></a>
         <div className="ArtContent hidden">
           <h2>Quiz</h2>
           <p>Se tester via un quiz</p>
