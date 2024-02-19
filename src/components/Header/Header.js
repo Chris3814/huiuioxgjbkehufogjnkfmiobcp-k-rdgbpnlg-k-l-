@@ -6,10 +6,23 @@ import "../MenuBurger/MenuBurger.scss";
 
 function Header() {
   const [menuStatus, setMenuStatus] = useState("close");
+  const [currentPage, setCurrentPage] = useState("Accueil");
+
   const menuRef = useRef(null);
 
   const handleClickMenu = () => {
     setMenuStatus((status) => (status === "open" ? "close" : "open"));
+  };
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    setMenuStatus("close");
+  };
+
+  const detectCurrentPage = () => {
+    const currentPath = window.location.pathname;
+    const page = currentPath.replace("/", "");
+    setCurrentPage(page || "Accueil");
   };
 
   useEffect(() => {
@@ -22,6 +35,9 @@ function Header() {
         setMenuStatus("close");
       }
     };
+
+    detectCurrentPage();
+
     document.addEventListener("mousedown", handleClickOutsideMenu);
     return () => {
       document.removeEventListener("mousedown", handleClickOutsideMenu);
@@ -40,6 +56,9 @@ function Header() {
 
   return (
     <div className="Header">
+      <span className="LogoSpan">
+        <img className="Logo" src={HeaderLogo} alt="Header Logo" />
+      </span>
       <div className="MenuBurger">
         <div
           className="MenuBurger-container"
@@ -53,26 +72,21 @@ function Header() {
       </div>
 
       <nav ref={menuRef} className={"NavigationList-wrapper " + menuStatus}>
-        <ul className="NavigationList" style={{ paddingLeft: 0 }}>
+        <ul className="NavigationList">
           <li>
-            <Link to="/#" className="underline" onClick={handleClickMenu}>
+            <Link
+              to=""
+              className={currentPage === "Accueil" ? "underline active" : "underline"}
+              onClick={() => handlePageChange("Accueil")}
+            >
               Accueil
             </Link>
           </li>
           <li>
             <Link
-              to="/#articles"
-              className="underline"
-              onClick={handleClickMenu}
-            >
-              Articles
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/A-propos"
-              className="underline"
-              onClick={handleClickMenu}
+              className={currentPage === "A-propos" ? "underline active" : "underline"}
+              onClick={() => handlePageChange("A-propos")}
             >
               A propos
             </Link>
@@ -88,9 +102,6 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <span className="LogoSpan">
-        <img className="Logo" src={HeaderLogo} alt="Header Logo" />
-      </span>
     </div>
   );
 }

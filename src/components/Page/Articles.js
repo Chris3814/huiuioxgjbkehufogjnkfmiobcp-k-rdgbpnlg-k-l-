@@ -30,27 +30,6 @@ function Articles() {
           <p>Se protéger sur les réseaux sociaux</p>
         </div>
       </div>
-      <div className="Art Art5">
-        <a href="/articles/5"></a>
-        <div className="ArtContent hidden">
-          <h2>Malware</h2>
-          <p>Reconnaître un programme malveillant</p>
-        </div>
-      </div>
-      <div className="Art Art6">
-        <a href="/articles/6"></a>
-        <div className="ArtContent hidden">
-          <h2>Social engineering</h2>
-          <p>L’ingénierie sociale</p>
-        </div>
-      </div>
-      <div className="Art Art7">
-        <a href="/articles/7"></a>
-        <div className="ArtContent hiden">
-          <h2>DCP</h2>
-          <p>Cookies et données à caractère personnel</p>
-        </div>
-      </div>
       <div className="Art ArtPresentation">
         <a href="/articles/presentation"></a>
         <div className="ArtContent hidden">
