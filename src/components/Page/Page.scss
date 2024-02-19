@@ -49,14 +49,7 @@
     align-items: center; // Centrer verticalement les éléments
   }
 
-  .h2_Main {
-    font-style: italic;
-    font-size: 60px;
-    text-align: left;
-    margin-top: 100px;
-  }
-
-  .H1_color {
+  .h1_color {
     font-size: 60px;
     font-style: italic;
     text-align: left;
@@ -81,6 +74,22 @@
     font-size: 55px;
   }
 
+  .h2_color {
+    font-size: 50px;
+    font-style: italic;
+    text-align: left;
+    background: linear-gradient(270deg, #fa6f0b -10.8%, #ce2bd3 110.51%);
+    background-clip: text; /* Appliquer le dégradé au texte seulement */
+    color: transparent; /* Rendre le texte transparent */
+  }
+
+  .h2_text {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 45px;
+    text-align: center;
+  }
+
   button {
     background: linear-gradient(270deg, #fa6f0b -10.8%, #ce2bd3 110.51%);
     color: white;
@@ -93,7 +102,7 @@
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 1px solid transparent; /* Ajouter une bordure transparente */
-    font-size: 16px; /* Ajuster la taille du texte selon vos besoins */
+    font-size: 20px; /* Ajuster la taille du texte selon vos besoins */
   }
 
   .content {
@@ -103,19 +112,28 @@
     margin-left: 150px;
   }
 
-  .Instagram {
-    margin-top: 15px;
-    height: 70px;
-    margin-right: 10px; /* Ajouter une marge à droite de l'image pour l'espace entre l'image et le texte */
+  .InstagramBanner {
+    display: flex; /* Utiliser flexbox pour aligner les éléments */
+    align-items: center; /* Centrer verticalement */
   }
-
+  
+  .instagram {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 10px; /* Ajouter une marge à droite de l'image pour l'espace entre l'image et le texte */
+    height: 50px;
+  }
+  
   .Instagram_text {
-    margin-top: 35px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 40px; /* Supprimer la marge supérieure */
     background: linear-gradient(270deg, #3d4384 0%, #2764b8 100%);
     background-clip: text;
     color: transparent;
-  }
-
+    height: 50px; /* Définir la hauteur */
+  }  
+  
   .ContentImg {
     display: block;
     max-width: 60%;
@@ -129,10 +147,6 @@
     height: auto;
   }
 
-  .Hr {
-    margin-top: 2rem;
-  }
-
   .ArticleImg {
     display: block;
     margin-left: auto;
@@ -142,8 +156,8 @@
   }
 
   .ArticlesWrapper {
-    width: 700px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -272,10 +286,10 @@
     }
   }
 
-  h1 {
-    font-size: 45px;
-    text-align: center;
-  }
+  // h1 {
+  //   font-size: 45px;
+  //   // text-align: center;
+  // }
 
   h2 {
     text-align: left;

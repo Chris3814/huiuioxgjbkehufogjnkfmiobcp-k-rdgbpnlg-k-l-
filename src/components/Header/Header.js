@@ -70,7 +70,7 @@ function Header() {
           <i className={menuStatus}></i>
         </div>
       </div>
-
+  
       <nav ref={menuRef} className={"NavigationList-wrapper " + menuStatus}>
         <ul className="NavigationList">
           <li>
@@ -101,9 +101,10 @@ function Header() {
             </a>
           </li>
         </ul>
-      </nav>
+      </nav>  
     </div>
   );
+  
 }
 
 export default Header;

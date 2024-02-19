@@ -9,6 +9,18 @@
   position: fixed;
   top: 0;
   z-index: 5;
+  backdrop-filter: blur(5px); // Ajoutez cette ligne pour l'effet de flou
+  filter: blur(0); // Assurez-vous que le filtre de flou est désactivé par défaut
+  transition: backdrop-filter 0.3s ease-in-out; // Ajoutez une transition pour une animation fluide
+
+    /* Ajout du style pour le trait blanc */
+    border-bottom: 3px solid white; /* Trait blanc de 1 pixel de large en-dessous du header */
+    margin: 0 -10px 0px; /* Marge en-dessous et à gauche et droite du header pour séparer du contenu */
+    // margin-bottom: 20px; /* Marge en-dessous du header pour séparer du contenu */
+
+  &.scrolled {
+    backdrop-filter: blur(10px); // Modifiez la valeur du flou lorsque le scroll commence
+  }
 }
 
 .LogoSpan {
@@ -52,7 +64,7 @@
       background: linear-gradient(270deg, #FA6F0B -10.8%, #CE2BD3 110.51%);
       background-clip: text; /* Appliquer le dégradé au texte seulement */
       color: transparent; /* Rendre le texte transparent */
-      display: inline-block; /* Pour éviter des problèmes de disposition */
+      display: inline; /* Pour éviter des problèmes de disposition */
     }
   }
 }
